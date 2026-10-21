@@ -1,0 +1,24 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/taiwan-sl/website#readme",
+  "bugs": {
+    "url": "https://github.com/taiwan-sl/website/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taiwan-sl/website.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "nodejs",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.3.0"
+  }
+}
