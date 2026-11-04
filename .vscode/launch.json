@@ -5,17 +5,20 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Server",
+            "program": "${workspaceFolder}/server.js",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "node"
+        },
+        {
             "name": "DebugMyServer",
             "request": "launch",
             "type": "chrome",
             "url": "http://localhost:80",
             "webRoot": "${workspaceFolder}"
-        },
-        {
-            "type": "chrome",
-            "request": "launch",
-            "name": "Debug webpage",
-            "url": "http://127.0.0.1:5500/Bootstrap_Exercise1/index.html"
         }
     ]
 }
