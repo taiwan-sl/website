@@ -9,6 +9,7 @@ server.use(bodyParser.urlencoded({ extended: true }));
 server.use(bodyParser.json());
 
 var Contact = new DB({ filename: 'contact.db', autoload: true });
+var ServiceDB = new DB({ filename: 'services.db', autoload: true });
 
 server.get("/contact",function(req,res){ //web root
  	res.send("Hello, World!"); //回傳固定內容
@@ -20,6 +21,12 @@ server.post("/contact", async function(req,res){
 	res.status(201).json(contact)
 	;
 });
+
+server.get("/service", (req,res)=>{
+	ServiceDB.find({}).then(result=>{
+		res.send(result);
+	})
+} )
 
 server.get("/*splat", function(req,res){ //other pages, express 4 use * 
  	res.send("Page not found", 404);

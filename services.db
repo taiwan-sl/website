@@ -1,5 +1,3 @@
-[
-{"icon":"fa-shopping-cart","title":"E-Commerce","desc":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur porro laborum fuga repellat."},
-{"icon":"fa-laptop","title":"Responsive Design","desc":""},
-{"icon":"fa-lock","title":"Web Security","desc":""}
-]
+{"icon":"fa-shopping-cart","title":"E-Commerce","desc":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur porro laborum fuga repellat.","_id":"9MrghNZiNCYitIXL"}
+{"icon":"fa-laptop","title":"Responsive Design","desc":"Test 2","_id":"JvmFHuoXkyT0YTtJ"}
+{"icon":"fa-lock","title":"Web Security","desc":"Test 3","_id":"wPXIHaSaAjdLDXGH"}
