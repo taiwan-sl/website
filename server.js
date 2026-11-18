@@ -10,7 +10,7 @@ server.use(bodyParser.json());
 
 var Contact = new DB({ filename: 'contact.db', autoload: true });
 var ServiceDB = new DB({ filename: 'services.db', autoload: true });
-
+var ProfolioDB = new DB({ filename: 'profolio.db', autoload: true });
 server.get("/contact",function(req,res){ //web root
  	res.send("Hello, World!"); //回傳固定內容
 	Contact.insert(req.query);
@@ -27,6 +27,14 @@ server.get("/service", (req,res)=>{
 		res.send(result);
 	})
 } )
+
+server.get("/profolio", (req,res)=>{
+	ProfolioDB.find({}).then(result=>{
+		res.send(result);
+	})
+} )
+
+
 
 server.get("/*splat", function(req,res){ //other pages, express 4 use * 
  	res.send("Page not found", 404);
